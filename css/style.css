@@ -1,0 +1,105 @@
+:root {
+  --color-primary: #d62e3399;
+  --color-secondary: #ccc;
+  --color-hover: #601c1e;
+}
+
+body {
+  font-family: "Segoe UI", "system-ui", "-apple-system";
+}
+
+/* header  */
+header {
+  background-image: linear-gradient(var(--color-primary), var(--color-primary)),
+    url("./../assets/images/events-heavenly-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 3.75rem;
+}
+
+.navbar > ul > li > a,
+.navbar > .x-icon div i {
+  font-size: 1.563rem;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+}
+
+.navbar > ul > li:hover a,
+.navbar > .x-icon div:hover i {
+  color: var(--color-hover) !important ;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 270px;
+  left: -100%;
+}
+
+.open-nav {
+  top: 5%;
+  cursor: pointer;
+}
+
+/*section 2 Accordion */
+.Accordion .toggler {
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.toggler + p {
+  background-color: var(--color-secondary);
+  padding: 15px;
+}
+
+.toggler:not(:nth-child(1)) + p {
+  display: none;
+}
+
+/* section 3 counter  */
+.section3 {
+  background-image: linear-gradient(var(--color-primary), var(--color-primary)),
+    url("./../assets/images/invitation-2508607__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time-holder p {
+  border: 2px solid white;
+}
+
+/*section 4*/
+
+.section4 .inner h2 {
+  font-size: 2.188rem;
+}
+
+.left-section h3 {
+  font-weight: 900;
+  font-style: 1.125rem;
+}
+
+.left-section ul:last-child li {
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--color-primary);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.left-section ul:last-child li:hover {
+  background-color: red;
+  border-color: transparent;
+  color: white;
+}
+
+#send-message {
+  resize: none;
+}
